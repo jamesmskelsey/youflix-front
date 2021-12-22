@@ -1,20 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
+  background-color: hsl(220, 13%, 18%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +10,26 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: hsl(193, 95%, 68%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+    color: hsl(193, 95%, 43%);
+}
+
+body {
+    background-color: hsl(220, 13%, 18%);
+    ;
+    color: white;
+}
+
+.playlist-item {
+    transition: background-color ease .5s;
+    padding: 1rem;
+}
+
+.playlist-item:hover {
+    background-color: hsl(220, 13%, 28%);
+    cursor: pointer;
 }
